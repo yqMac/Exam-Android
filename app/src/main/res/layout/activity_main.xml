@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.yqmac.it.main.MainActivity"
+        >
+
+
+        <android.support.v7.widget.Toolbar
+                android:background="@drawable/tool"
+                android:id="@+id/toolbar"
+                android:title="213123123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></android.support.v7.widget.Toolbar>
+
+
+        <RelativeLayout
+                android:id="@+id/layout_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+        <RadioGroup
+                android:id="@+id/rg_activity_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eae8e8"
+                android:orientation="horizontal">
+
+                <!-- 第一个默认选中-->
+                <RadioButton
+                        android:id="@+id/rb_activity_1"
+                        style="@style/RadioBtn_activity_home"
+                        android:checked="true"
+                        android:drawableTop="@drawable/selector_rb_home"
+                        android:text="考试列表"
+                        android:textSize="15sp"
+                        />
+
+                <RadioButton
+                        android:id="@+id/rb_activity_2"
+                        style="@style/RadioBtn_activity_home"
+                        android:drawableTop="@drawable/selector_rb_genzong"
+                        android:text="查询成绩"
+                        android:textSize="15sp"
+                        />
+
+                <RadioButton
+                        android:id="@+id/rb_activity_3"
+                        style="@style/RadioBtn_activity_home"
+                        android:drawableTop="@drawable/selector_rb_setting"
+                        android:text="关于我们"
+                        android:textSize="15sp"
+                        />
+        </RadioGroup>
+
+</LinearLayout>

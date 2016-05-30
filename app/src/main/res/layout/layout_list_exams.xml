@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+    <ImageView
+            android:id="@+id/iv_exam"
+            android:layout_width="90sp"
+            android:layout_height="70sp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/exam"
+            android:layout_centerVertical="true"
+            />
+
+    <TextView
+            android:id="@+id/tv_exam_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/iv_exam"
+            android:singleLine="true"
+            android:text="考试名称"
+            />
+
+    <TextView
+            android:id="@+id/tv_exam_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_below="@+id/tv_exam_name"
+            android:layout_toRightOf="@+id/iv_exam"
+            android:textColor="@android:color/darker_gray"
+            android:lines="2"
+            android:text="考试时间"
+            />
+
+    <TextView
+            android:id="@+id/tv_exam_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_exam_time"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff0000"
+            android:text="考试状态"
+
+            />
+
+        <!--<view-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="#da1b0707"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"/>-->
+</RelativeLayout>

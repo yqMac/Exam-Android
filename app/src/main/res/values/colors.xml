@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 线颜色 -->
+    <color name="line_color">#dadada</color>
+    <color name="white">#FFFFFF</color>
+</resources>
