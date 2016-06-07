@@ -143,7 +143,7 @@ public class GradeFragment extends BaseFragment {
         LayoutInflater mInflater;
 
         public GradeAdatapter() {
-            mInflater = LayoutInflater.from(getActivity());
+            mInflater = LayoutInflater.from(context);
         }
 
         public int getCount() {
